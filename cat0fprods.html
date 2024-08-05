@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog of Products</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        .unique-disp-page-title {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #7FA2B6;
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            text-decoration: none; /* Remove underline from header */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+
+        .product-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+            text-align: center;
+            background-color: #ffffff;
+            padding: 10px;
+            cursor: pointer;
+            text-decoration: none; /* Remove underline from product names */
+        }
+
+        .product-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+        }
+
+        .unique-img-responsive {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .product-container span {
+            display: block;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            font-size: 14pt;
+            transition: color 0.3s ease;
+        }
+
+        .product-container:hover span {
+            color: #7FA2B6;
+        }
+
+        .unique-disp-page-wrap {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .unique-disp-page-wrap a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16pt;
+            font-weight: bold;
+            color: #7FA2B6;
+            text-decoration: underline; /* Underline for the button */
+            padding: 10px 20px;
+            border-radius: 15px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+        }
+
+        .unique-disp-page-wrap a:hover {
+            color: #555;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transform: scale(1.05);
+            text-decoration: underline; /* Ensure underline stays on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container gm-editing ui-sortable custom-border" style="position: relative; left: 0px; top: 0px;">
+        <div class="row">
+            <div class="column col-md-12 col-sm-12 col-xs-12">
+                <!--gm-editable-region-->
+                <p class="unique-disp-page-title" data-mce-style="text-align: center;">
+                    <strong>
+                        <a href="https://www.tristate-bearing.com/products" target="_blank" title="CATALOG" rel="noopener noreferrer" data-mce-href="products" style="color: rgb(127, 162, 182);" data-mce-style="color: #7fa2b6; text-decoration: none;">
+                            CATALOG OF PRODUCTS
+                        </a>
+                    </strong>
+                </p>
+                <!--/gm-editable-region-->
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="product-container">
+                <a href="https://www.tristate-bearing.com/c/bearings">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/bearings_cat_kjfb8_8vhdw.jpg" alt="Bearings" class="unique-img-responsive">
+                    <span>BEARINGS</span>
+                </a>
+            </div>
+            <div class="product-container">
+                <a href="https://www.tristate-bearing.com/c/belt,-sheaves-&amp;-pulleys">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/belts_sheaves_pulleys_image_dsfiuh87.jpg" alt="Belts, Sheaves &amp; Pulleys" class="unique-img-responsive">
+                    <span>BELTS, SHEAVES &amp; PULLEYS</span>
+                </a>
+            </div>
+            <div class="product-container">
+                <a href="https://www.tristate-bearing.com/c/chains-&amp;-sprockets">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/chain_spkt_mn_oujhdfg_9gjh7tgh.jpg" alt="Chains &amp; Sprockets" class="unique-img-responsive">
+                    <span>CHAINS &amp; SPROCKETS</span>
+                </a>
+            </div>
+            <div class="product-container">
+                <a href="https://www.tristate-bearing.com/c/clutches-&amp;-brakes">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/clutch_brake_lsknfg_ujfd84.jpg" alt="Clutches &amp; Brakes" class="unique-img-responsive">
+                    <span>CLUTCHES &amp; BRAKES</span>
+                </a>
+            </div>
+            <div class="product-container">
+                <a href="https://www.tristate-bearing.com/c/couplings">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/couplings_ubfg_97gerfg_fhsuyrbvf.jpg" alt="Couplings" class="unique-img-responsive">
+                    <span>COUPLINGS</span>
+                </a>
+            </div>
+            <div class="product-container">
+                <a href="https://www.tristate-bearing.com/c/electric-motors">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/electricmotors_sdkujhg_surgf_85hg.jpg" alt="Electrical Drives &amp; Controls" class="unique-img-responsive">
+                    <span>ELECTRICAL DRIVES &amp; CONTROLS</span>
+                </a>
+            </div>
+            <div class="product-container">
+                <a href="https://www.tristate-bearing.com/c/pneumatics">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/pneumatic_prod_mn_msdfujgb_97ghg.jpg" alt="Pneumatic &amp; Fluid Power" class="unique-img-responsive">
+                    <span>PNEUMATIC &amp; FLUID POWER</span>
+                </a>
+            </div>
+            <div class="product-container">
+                <a href="https://www.tristate-bearing.com/c/seals,-gaskets-&amp;-packing">
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/Seals_Gaskets_packing_sdiuybhgf_8rj.jpg" alt="Seals &amp; Retaining Rings" class="unique-img-responsive">
+                    <span>SEALS &amp; RETAINING RINGS</span>
+                </a>
+            </div>
+        </div>
+        <div class="unique-disp-page-wrap">
+            <a href="https://www.tristate-bearing.com/products">See all Products</a>
+        </div>
+    </div>
+</body>
+
+</html>
