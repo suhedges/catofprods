@@ -29,18 +29,6 @@
             gap: 20px;
         }
 
-        @media (max-width: 1024px) {
-            .grid-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 600px) {
-            .grid-container {
-                grid-template-columns: repeat(1, 1fr);
-            }
-        }
-
         .product-container {
             position: relative;
             overflow: hidden;
@@ -104,6 +92,49 @@
             transform: scale(1.05);
             text-decoration: underline; /* Ensure underline stays on hover */
         }
+
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .unique-disp-page-title {
+                font-size: 18pt;
+            }
+
+            .product-container span {
+                font-size: 12pt;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .unique-disp-page-title {
+                font-size: 0.7em;
+            }
+
+            .product-container {
+                padding: 5px;
+            }
+
+            .product-container span {
+                font-size: 0.7em;
+            }
+
+            .unique-img-responsive {
+                width: 108px;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            .unique-disp-page-wrap a {
+                font-size: 0.7em;
+                padding: 8px 16px;
+            }
+        }
     </style>
 </head>
 
@@ -137,14 +168,14 @@
             </div>
             <div class="product-container">
                 <a href="https://www.tristate-bearing.com/c/chains-&amp;-sprockets">
-                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/chain_spkt_mn_oujhdfg_9gjh7tgh.jpg" alt="Chains &amp; Sprockets" class="unique-img-responsive">
-                    <span>CHAINS &amp; SPROCKETS</span>
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/chain_spkt_mn_oujhdfg_9gjh7tgh.jpg" alt="Chains & Sprockets" class="unique-img-responsive">
+                    <span>CHAINS & SPROCKETS</span>
                 </a>
             </div>
             <div class="product-container">
                 <a href="https://www.tristate-bearing.com/c/clutches-&amp;-brakes">
-                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/clutch_brake_lsknfg_ujfd84.jpg" alt="Clutches &amp; Brakes" class="unique-img-responsive">
-                    <span>CLUTCHES &amp; BRAKES</span>
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/clutch_brake_lsknfg_ujfd84.jpg" alt="Clutches & Brakes" class="unique-img-responsive">
+                    <span>CLUTCHES & BRAKES</span>
                 </a>
             </div>
             <div class="product-container">
@@ -155,20 +186,20 @@
             </div>
             <div class="product-container">
                 <a href="https://www.tristate-bearing.com/c/electric-motors">
-                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/electricmotors_sdkujhg_surgf_85hg.jpg" alt="Electrical Drives &amp; Controls" class="unique-img-responsive">
-                    <span>ELECTRICAL DRIVES &amp; CONTROLS</span>
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/electricmotors_sdkujhg_surgf_85hg.jpg" alt="Electrical Drives & Controls" class="unique-img-responsive">
+                    <span>ELECTRICAL DRIVES & CONTROLS</span>
                 </a>
             </div>
             <div class="product-container">
                 <a href="https://www.tristate-bearing.com/c/pneumatics">
-                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/pneumatic_prod_mn_msdfujgb_97ghg.jpg" alt="Pneumatic &amp; Fluid Power" class="unique-img-responsive">
-                    <span>PNEUMATIC &amp; FLUID POWER</span>
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/pneumatic_prod_mn_msdfujgb_97ghg.jpg" alt="Pneumatic & Fluid Power" class="unique-img-responsive">
+                    <span>PNEUMATIC & FLUID POWER</span>
                 </a>
             </div>
             <div class="product-container">
                 <a href="https://www.tristate-bearing.com/c/seals,-gaskets-&amp;-packing">
-                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/Seals_Gaskets_packing_sdiuybhgf_8rj.jpg" alt="Seals &amp; Retaining Rings" class="unique-img-responsive">
-                    <span>SEALS &amp; RETAINING RINGS</span>
+                    <img src="https://www.tristate-bearing.com/ASSETS/IMAGES/CMS/STATIC_IMAGES/Categories/Seals_Gaskets_packing_sdiuybhgf_8rj.jpg" alt="Seals & Retaining Rings" class="unique-img-responsive">
+                    <span>SEALS & RETAINING RINGS</span>
                 </a>
             </div>
         </div>
